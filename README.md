@@ -17,7 +17,7 @@ Welcome to the Virtual Herbal Garden, an interactive web application showcasing 
 - CSS
 - JavaScript
 - Computer Vision
-- Deep Learning frameworks: MobileViTv2, EfficientNet (B0-B7), YOLOv8
+- Deep Learning frameworks: MobileNetv2, EfficientNetB1/B2, YOLOv8, DenseNet121
 - [3D Model Viewer](https://modelviewer.dev/)
 - Node.js
 
