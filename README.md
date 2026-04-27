@@ -16,8 +16,10 @@ Welcome to the Virtual Herbal Garden, an interactive web application showcasing 
 - HTML
 - CSS
 - JavaScript
-- [Three.js](https://threejs.org/)
-- [Model Viewer](https://modelviewer.dev/)
+- Computer Vision
+- Deep Learning frameworks: MobileViTv2, EfficientNet (B0-B7), YOLOv8
+- [3D Model Viewer](https://modelviewer.dev/)
+- Node.js
 
 ## Getting Started
 
@@ -26,10 +28,11 @@ Welcome to the Virtual Herbal Garden, an interactive web application showcasing 
     git clone https://github.com/your-username/virtual-herbal-garden.git
     ```
 2. Navigate to the project directory:
-    ```sh
+    ```
     cd virtual-herbal-garden
     ```
 3. Open `index.html` in your preferred web browser.
+4. Click on Get Started button on the home page to view about different herbal plants and see their 3D models
 
 
 ## Usage
