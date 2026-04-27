@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Herbal Garden</title>
+    <link rel="stylesheet" href="garden_styles.css">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer/dist/model-viewer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/loaders/GLTFLoader.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Virtual Herbal Garden</h1>
+        <nav>
+            <a href="#plants">Explore Plants</a>
+            <a href="#search">Search & Filter</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="intro">
+            <h2>Welcome to the Virtual Herbal Garden</h2>
+            <p>The AYUSH sector relies heavily on medicinal plants and herbs, which form the backbone of traditional healing practices. Our Virtual Herbal Garden allows you to explore these plants from the comfort of your home.</p>
+        </section>
+
+        <section id="plants">
+            <h2>Interactive 3D Models</h2>
+            <div id="tulsi" class="model-container">
+                <!-- Tulsi -->
+                <model-viewer src="models/tulsi.glb" alt="Tulsi" auto-rotate camera-controls></model-viewer>
+                <div class="plant-info">
+                    <h3>Tulsi (Ocimum sanctum)</h3>
+                    <p><strong>Common Names:</strong> Holy Basil, Sacred Basil</p>
+                    <p><strong>Habitat:</strong> Native to India, commonly found in gardens.</p>
+                    <p><strong>Medicinal Uses:</strong> Known for its anti-inflammatory, anti-viral, and antioxidant properties.</p>
+                    <p><strong>Cultivation:</strong> Prefers warm climates and well-drained soil. Grows well in pots or garden beds.</p>
+                    <img src="images/Tulsi.jpg" alt="Tulsi Plant">
+                    <br>
+                    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4296439/" class="learn-more">Learn More</a>
+                    <button class="bookmark-btn" onclick="bookmarkPlant('Tulsi (Ocimum sanctum)', 'images/Tulsi.jpg')">Bookmark this Plant</button>
+                </div>
+            </div>
+
+            <div id="ashwagandha" class="model-container">
+                <!-- Ashwagandha -->
+                <model-viewer src="models/Ahwagandha.glb" alt="Ashwagandha" auto-rotate camera-controls></model-viewer>
+                <div class="plant-info">
+                    <h3>Ashwagandha (Withania somnifera)</h3>
+                    <p><strong>Common Names:</strong> Indian Ginseng, Winter Cherry</p>
+                    <p><strong>Habitat:</strong> Native to India, grows well in arid regions.</p>
+                    <p><strong>Medicinal Uses:</strong> Adaptogen, helps reduce stress and anxiety, boosts immunity.</p>
+                    <p><strong>Cultivation:</strong> Prefers dry, well-drained soil and full sunlight.</p>
+                    <img src="images/Ashwagandha.jpeg" alt="Ashwagandha Plant">
+                    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3573577/" class="learn-more">Learn More</a>
+                    <button class="bookmark-btn" onclick="bookmarkPlant('Ashwagandha (Withania somnifera)', 'images/Ashwagandha.jpg')">Bookmark this Plant</button>
+                </div>
+            </div>
+
+            <div id="turmeric" class="model-container">
+                <!-- Turmeric -->
+                <model-viewer src="models/Turmeric.glb" alt="Turmeric" auto-rotate camera-controls></model-viewer>
+                <div class="plant-info">
+                    <h3>Turmeric (Curcuma longa)</h3>
+                    <p><strong>Common Names:</strong> Haldi, Indian Saffron</p>
+                    <p><strong>Habitat:</strong> Native to Southeast Asia, requires a warm, humid climate.</p>
+                    <p><strong>Medicinal Uses:</strong> Anti-inflammatory, antioxidant, used in digestive health.</p>
+                    <p><strong>Cultivation:</strong> Grows in rich, well-drained soil with ample rainfall.</p>
+                    <img src="images/turmeric.jpg" alt="Turmeric Plant">
+                    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5664031/" class="learn-more">Learn More</a>
+                    <button class="bookmark-btn" onclick="bookmarkPlant('Turmeric (Curcuma longa)', 'images/turmeric.jpg')">Bookmark this Plant</button>
+
+                </div>
+            </div>
+
+            <div id="cinnamon" class="model-container">
+                <!-- Cinnamon -->
+                <model-viewer src="models/Cinnamon.glb" alt="Cinnamon" auto-rotate camera-controls></model-viewer>
+                <div class="plant-info">
+                    <h3>Cinnamon (Cinnamomum verum)</h3>
+                    <p><strong>Common Names:</strong> Ceylon Cinnamon, True Cinnamon</p>
+                    <p><strong>Habitat:</strong> Native to Sri Lanka, thrives in tropical climates.</p>
+                    <p><strong>Medicinal Uses:</strong> Helps regulate blood sugar levels, has anti-inflammatory properties.</p>
+                    <p><strong>Cultivation:</strong> Prefers warm, humid environments with well-drained soil.</p>
+                    <img src="images/cinnamon.jpeg" alt="Cinnamon Plant">
+                    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4003790/" class="learn-more">Learn More</a>
+                    <button class="bookmark-btn" onclick="bookmarkPlant('Cinnamon (Cinnamomum verum)', 'images/cinnamon.jpg')">Bookmark this Plant</button>
+
+                </div>
+            </div>
+
+            <div id="cardamom" class="model-container">
+                <!-- Cardamom -->
+                <model-viewer src="models/Cardamom.glb" alt="Cardamom" auto-rotate camera-controls></model-viewer>
+                <div class="plant-info">
+                    <h3>Cardamom (Elettaria cardamomum)</h3>
+                    <p><strong>Common Names:</strong> True Cardamom</p>
+                    <p><strong>Habitat:</strong> Native to India, grows in tropical and subtropical climates.</p>
+                    <p><strong>Medicinal Uses:</strong> Supports digestive health, has antimicrobial properties.</p>
+                    <p><strong>Cultivation:</strong> Requires a moist, tropical climate and well-drained soil.</p>
+                    <img src="images/Cardamom.jpg" alt="Cardamom Plant">
+                    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10346154/" class="learn-more">Learn More</a>
+                    <button class="bookmark-btn" onclick="bookmarkPlant('Cardamom (Elettaria cardamomum)', 'images/Cardamom.jpg')">Bookmark this Plant</button>
+
+                </div>
+            </div>
+
+            <div id="aloe-vera" class="model-container">
+                <!-- AloeVera -->
+                <model-viewer src="models/AloeVera.glb" alt="Aloe Vera" auto-rotate camera-controls></model-viewer>
+                <div class="plant-info">
+                    <h3>Aloe Vera (Aloe barbadensis miller)</h3>
+                    <p><strong>Common Names:</strong> Aloe, Ghritkumari</p>
+                    <p><strong>Habitat:</strong> Prefers arid, semi-tropical climates.</p>
+                    <p><strong>Medicinal Uses:</strong> Used for skin healing, digestion, and anti-inflammatory properties.</p>
+                    <p><strong>Cultivation:</strong> Thrives in sandy soil and minimal watering.</p>
+                    <img src="images/AloeVera.jpg" alt="Aloe Vera Plant">
+                    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2763764/" class="learn-more">Learn More</a>
+                    <button class="bookmark-btn" onclick="bookmarkPlant('Aloe Vera (Aloe barbadensis miller)', 'images/AloeVera.jpg')">Bookmark this Plant</button>
+                </div>
+            </div>
+
+            <div id="ginger" class="model-container">
+                <!-- Ginger -->
+                <model-viewer src="models/Ginger.glb" alt="Ginger" auto-rotate camera-controls></model-viewer>
+                <div class="plant-info">
+                    <h3>Ginger (Zingiber officinale)</h3>
+                    <p><strong>Common Names:</strong> Adrak</p>
+                    <p><strong>Habitat:</strong> Thrives in warm and humid climates.</p>
+                    <p><strong>Medicinal Uses:</strong> Aids digestion, reduces nausea, anti-inflammatory.</p>
+                    <p><strong>Cultivation:</strong> Needs fertile, moist, well-drained soil.</p>
+                    <img src="images/Ginger.jpg" alt="Ginger Plant">
+                    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3665023/" class="learn-more">Learn More</a>
+                    <button class="bookmark-btn" onclick="bookmarkPlant('Ginger (Zingiber officinale)', 'images/Ginger.jpg')">Bookmark this Plant</button>
+                </div>
+            </div>
+
+            <div id="hibiscus" class="model-container">
+                <!-- Hibiscus -->
+                <model-viewer src="models/Hibiscus.glb" alt="Hibiscus" auto-rotate camera-controls></model-viewer>
+                <div class="plant-info">
+                    <h3>Hibiscus (Hibiscus rosa-sinensis)</h3>
+                    <p><strong>Common Names:</strong> Gudhal</p>
+                    <p><strong>Habitat:</strong> Grows in tropical and subtropical areas.</p>
+                    <p><strong>Medicinal Uses:</strong> Supports hair health, lowers blood pressure.</p>
+                    <p><strong>Cultivation:</strong> Prefers sunlight and regular watering.</p>
+                    <img src="images/Hibiscus.jpg" alt="Hibiscus Plant">
+                    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6627181/" class="learn-more">Learn More</a>
+                    <button class="bookmark-btn" onclick="bookmarkPlant('Hibiscus (Hibiscus rosa-sinensis)', 'images/Hibiscus.jpg')">Bookmark this Plant</button>
+                </div>
+            </div>
+
+            <div id="rosemary" class="model-container">
+                <!-- Rosemary -->
+                <model-viewer src="models/Rosemary.glb" alt="Rosemary" auto-rotate camera-controls></model-viewer>
+                <div class="plant-info">
+                    <h3>Rosemary (Rosmarinus officinalis)</h3>
+                    <p><strong>Common Names:</strong> Rosemary</p>
+                    <p><strong>Habitat:</strong> Native to the Mediterranean.</p>
+                    <p><strong>Medicinal Uses:</strong> Enhances memory, hair growth, digestion.</p>
+                    <p><strong>Cultivation:</strong> Requires well-drained soil and full sunlight.</p>
+                    <img src="images/Rosemary.jpg" alt="Rosemary Plant">
+                    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3736918/" class="learn-more">Learn More</a>
+                    <button class="bookmark-btn" onclick="bookmarkPlant('Rosemary (Salvia rosmarinus)', 'images/Rosemary.jpg')">Bookmark this Plant</button>
+                </div>
+            </div>
+
+            <div id="amla" class="model-container">
+                <!-- Amla -->
+                <model-viewer src="models/Amla.glb" alt="Amla" auto-rotate camera-controls></model-viewer>
+                <div class="plant-info">
+                    <h3>Amla (Phyllanthus emblica)</h3>
+                    <p><strong>Common Names:</strong> Indian Gooseberry</p>
+                    <p><strong>Habitat:</strong> Native to India, found in tropical areas.</p>
+                    <p><strong>Medicinal Uses:</strong> Rich in Vitamin C, boosts immunity and metabolism.</p>
+                    <p><strong>Cultivation:</strong> Grows in a variety of soils, drought-resistant.</p>
+                    <img src="images/Amla.jpg" alt="Amla Plant">
+                    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5530971/" class="learn-more">Learn More</a>
+                    <button class="bookmark-btn" onclick="bookmarkPlant('Amla (Phyllanthus emblica)', 'images/Amla.jpg')">Bookmark this Plant</button>
+                </div>
+            </div>
+
+            <div id="bamboo" class="model-container">
+                <!-- Bamboo -->
+                <model-viewer src="models/Bamboo.glb" alt="Bamboo" auto-rotate camera-controls></model-viewer>
+                <div class="plant-info">
+                    <h3>Bamboo (Bambusa vulgaris)</h3>
+                    <p><strong>Common Names:</strong> Bamboo</p>
+                    <p><strong>Habitat:</strong> Thrives in tropical and subtropical zones.</p>
+                    <p><strong>Medicinal Uses:</strong> Used in Ayurveda for respiratory and digestive disorders.</p>
+                    <p><strong>Cultivation:</strong> Prefers moist, well-drained soil with good sunlight.</p>
+                    <img src="images/Bamboo.jpg" alt="Bamboo Plant">
+                    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6341153/" class="learn-more">Learn More</a>
+                    <button class="bookmark-btn" onclick="bookmarkPlant('Bamboo (Bambusoideae)', 'images/Bamboo.jpg')">Bookmark this Plant</button>
+                </div>
+            </div>
+
+            <div id="bhringraj" class="model-container">
+                <!-- Bhringraj -->
+                <model-viewer src="models/Bhringraj.glb" alt="Bhringraj" auto-rotate camera-controls></model-viewer>
+                <div class="plant-info">
+                    <h3>Bhringraj (Eclipta alba)</h3>
+                    <p><strong>Common Names:</strong> False Daisy</p>
+                    <p><strong>Habitat:</strong> Common in moist regions of India.</p>
+                    <p><strong>Medicinal Uses:</strong> Known for hair care, liver detoxification.</p>
+                    <p><strong>Cultivation:</strong> Requires moist soil and warm climate.</p>
+                    <img src="images/Bhringraj.jpg" alt="Bhringraj Plant">
+                    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5386330/" class="learn-more">Learn More</a>
+                    <button class="bookmark-btn" onclick="bookmarkPlant('Bhringraj (Eclipta prostrata)', 'images/Bhringraj.jpg')">Bookmark this Plant</button>
+                </div>
+            </div>
+
+            <div id="curry-leaves" class="model-container">
+                <!-- Curry Leaves -->
+                <model-viewer src="models/CurryLeaves.glb" alt="Curry Leaves" auto-rotate camera-controls></model-viewer>
+                <div class="plant-info">
+                    <h3>Curry Leaves (Murraya koenigii)</h3>
+                    <p><strong>Common Names:</strong> Curry Patta</p>
+                    <p><strong>Habitat:</strong> Native to India, grows in tropical areas.</p>
+                    <p><strong>Medicinal Uses:</strong> Improves digestion, controls blood sugar, good for hair.</p>
+                    <p><strong>Cultivation:</strong> Needs well-drained soil and moderate sunlight.</p>
+                    <img src="images/CurryLeaves.jpg" alt="Curry Leaves Plant">
+                    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1183073/" class="learn-more">Learn More</a>
+                    <button class="bookmark-btn" onclick="bookmarkPlant('Curry Leaves (Murraya koenigii)', 'images/CurryLeaves.jpg')">Bookmark this Plant</button>
+
+                </div>
+            </div>
+
+            <div id="clove" class="model-container">
+                <!-- Clove -->
+                <model-viewer src="models/clove.glb" alt="Clove" auto-rotate camera-controls></model-viewer>
+                <div class="plant-info">
+                    <h3>Clove (Syzygium aromaticum)</h3>
+                    <p><strong>Common Names:</strong> Clove Buds</p>
+                    <p><strong>Habitat:</strong> Native to Indonesia, thrives in tropical climates.</p>
+                    <p><strong>Medicinal Uses:</strong> Used for pain relief, has antibacterial and antioxidant properties.</p>
+                    <p><strong>Cultivation:</strong> Prefers warm, humid conditions with rich, well-drained soil.</p>
+                    <img src="images/clove.jpg" alt="Clove Plant">
+                    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3074903/" class="learn-more">Learn More</a>
+                    <button class="bookmark-btn" onclick="bookmarkPlant('Clove (Syzygium aromaticum)', 'images/clove.jpg')">Bookmark this Plant</button>
+
+                </div>
+            </div>
+        </section>
+                
+
+        <section id="search">
+            <h2>Search & Filter Plants</h2>
+            <input type="text" id="search-input" placeholder="Search for plants...">
+            <button onclick="searchPlants()">Search</button>
+            <div id="search-results"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            <a href="https://forms.gle/yAxuXM79GZcEe6fu6" target="_blank" 
+               style="display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; text-align: center; text-decoration: none; border-radius: 5px; margin-right: 10px; transition: background-color 0.3s;"
+               onmouseover="this.style.backgroundColor='#45a049';" 
+               onmouseout="this.style.backgroundColor='#4CAF50';">Fill out the form to suggest a herbal plant to be added to the webpage</a>
+        
+            <a href="https://www.appsheet.com/start/b0880927-f6fe-4b06-9f0e-e1e62e6658e8" target="_blank" 
+               style="display: inline-block; padding: 10px 20px; background-color: #008CBA; color: white; text-align: center; text-decoration: none; border-radius: 5px; transition: background-color 0.3s;"
+               onmouseover="this.style.backgroundColor='#66bb6a';" 
+               onmouseout="this.style.backgroundColor='#008CBA';">View suggested herbal plants</a>
+        </p>
+                
+        <p>&copy; 2025 Virtual Herbal Garden. All rights reserved.</p>
+        <p>Made by <a >Team AyurVana</a></p>
+    </footer>
+
+    <script>
+        // Example search functionality
+        function searchPlants() {
+            const input = document.getElementById('search-input').value.toLowerCase();
+            const resultsContainer = document.getElementById('search-results');
+            resultsContainer.innerHTML = ''; // Clear previous results
+            
+            // Example search logic (replace with actual plant data)
+            const plants = [
+                { id: 'tulsi', name: 'Tulsi' },
+                { id: 'ashwagandha', name: 'Ashwagandha' },
+                { id: 'turmeric', name: 'Turmeric' },
+                { id: 'cinnamon', name: 'Cinnamon' },
+                { id: 'cardamom', name: 'Cardamom' },
+                { id: 'clove', name: 'Clove' },
+                { id: 'aloe-vera', name: 'Aloe Vera' },
+                { id: 'ginger', name: 'Ginger' },
+                { id: 'hibiscus', name: 'Hibiscus' },
+                { id: 'rosemary', name: 'Rosemary' },
+                { id: 'amla', name: 'Amla' },
+                { id: 'bamboo', name: 'Bamboo' },
+                { id: 'bhringraj', name: 'Bhringraj' },
+                { id: 'curry-leaves', name: 'Curry Leaves' }
+                
+            ];
+
+            const results = plants.filter(plant => plant.name.toLowerCase().includes(input));
+            if (results.length > 0) {
+                results.forEach(result => {
+                    const plantSection = document.getElementById(result.id);
+                    if (plantSection) {
+                        resultsContainer.appendChild(createResultElement(result));
+                    }
+                });
+                resultsContainer.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                resultsContainer.innerHTML = '<p>No plants found.</p>';
+            }
+        }
+
+        function createResultElement(result) {
+            const resultElement = document.createElement('div');
+            resultElement.className = 'result';
+            resultElement.innerHTML = `<p>Found: <a href="#${result.id}" onclick="scrollToPlant('${result.id}')">${result.name}</a></p>`;
+            return resultElement;
+        }
+
+        function scrollToPlant(id) {
+            const element = document.getElementById(id);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+
+    <script>
+        function bookmarkPlant(name, imageUrl) {
+            const bookmarkedPlants = JSON.parse(localStorage.getItem('bookmarkedPlants')) || [];
+            
+            // Check if it's already bookmarked
+            const exists = bookmarkedPlants.some(plant => plant.name === name);
+            if (exists) {
+                alert('This plant is already bookmarked!');
+                return;
+            }
+
+            // Add new bookmark
+            bookmarkedPlants.push({ name, imageUrl });
+            localStorage.setItem('bookmarkedPlants', JSON.stringify(bookmarkedPlants));
+            alert('Plant bookmarked successfully!');
+        }
+    </script>
+</body>
+</html>

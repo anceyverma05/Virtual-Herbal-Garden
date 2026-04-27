@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font awesome file link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Virtual Herbal Garden</title>
+    
+</head>
+
+<body>
+
+    <header class="header">
+        <!-- logo name  -->
+        <a href="#" class="logo"><i class="fas fa-leaf"></i>AyurVANA</a>
+
+        <!-- navbar icons  -->
+        <div class="fas fa-bars"></div>
+        <!-- navbar link  -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#Herbs">Herbs</a></li>
+                <li><a href="#team">Our Team</a></li>
+                <li><a href="#Plant">Plant tool</a></li>
+                <li><a href="#Garden">My Garden</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- home section start  -->
+
+    <section id="home" class="home">
+
+        <!-- home heading & text  -->
+        <h1 class="banner">Green Herbs, Green Medicine, Green Magic</h1>
+        <h2 class="slogan">For every ailment nature has woven a herbal remedy</h2>
+
+        <!-- home btn  -->
+        <a href="garden.html"><button>get started</button></a>
+    </section>
+
+
+    <!-- home section end  -->
+
+    <!-- about section start  -->
+
+    <section id="about" class="about">
+
+        <!-- about heading  -->
+        <h1 style="color: rgb(168, 255, 118);" class="heading">About us</h1>
+
+        <div class="row">
+            <!-- about heading & text  -->
+            <div class="content">
+                <h2>"Bridging Tradition with Technology—Explore the World of Herbs!"</h2>
+                <p>
+                    Welcome to the Virtual Herbal Garden, a unique platform dedicated to preserving and sharing the rich tradition of medicinal plants used in AYUSH (Ayurveda, Yoga & Naturopathy, Unani, Siddha, and Homeopathy)...
+                </p>
+            
+                <!-- Hidden extra paragraph -->
+                <div id="more-about" style="display: none;">
+                    <p>
+                        Our platform not only showcases detailed information about each herb but also integrates 3D models, search and filter tools, and interactive features that help you understand their cultivation and usage. It’s an educational tool for students, an informative platform for practitioners, and an exciting resource for herbal enthusiasts. Dive deep into the knowledge that has healed for centuries — virtually!
+                    </p>
+                </div>
+            
+                <!-- Read More button -->
+                <button class="btn" onclick="toggleReadMore()">Read More</button>
+            </div>
+            
+
+            <!-- about images  -->
+           
+        </div>
+
+
+    </section>
+    <!-- about section end  -->
+
+    <!-- service section start  -->
+
+    <section id="Herbs" class="herbs">
+
+        <!-- heading  -->
+        <h1 class="heading">HERBS</h1>
+
+        <div class="row">
+            <!-- service images  -->
+            <!-- service heading & text   -->
+            <div class="content">
+                <h2>Enviroment Friendly Plants</h2>
+                <p>These plants not only purify the air but also support biodiversity and reduce carbon footprint. 
+                    From fast-growing bamboo to hardy succulents and native herbs, 
+                    they thrive with minimal care while promoting a greener, healthier planet.
+                </p>
+                <div class="more-text" style="display: none;">
+                    <p><strong>Examples:</strong> Aloe Vera, Tulsi (Holy Basil), Neem, Snake Plant, Bamboo, Areca Palm.</p>
+                    <p>These plants are great for indoor and outdoor use, require minimal water, and help improve air quality naturally.</p>
+                </div>
+                <button class="btn" onclick="toggleText(this)">Read more</button>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <!-- service heading & text   -->
+            <div class="content">
+                <h2>Clean Earth with Plants</h2>
+                <p>
+                    Plants play a vital role in reducing soil erosion and improving environmental sustainability.
+                </p>
+                <div class="more-text" style="display: none;">
+                    <p>By planting native and pollution-absorbing species, we can reduce air and water pollution levels and restore degraded ecosystems.</p>
+                    <p><strong>Examples:</strong> Vetiver Grass, Bamboo, Moringa, Jatropha, Lemongrass.</p>
+                </div>
+                <button class="btn" onclick="toggleText(this)">Read more</button>
+            </div>
+
+            <!-- service images  -->
+            <!-- service images  -->
+            <!-- service heading & text   -->
+            <div class="content">
+                <h2>Create Good Health with Plants</h2>
+                <p>
+                    Many herbal and medicinal plants naturally boost immunity and support mental well-being.
+                </p>
+                <div class="more-text" style="display: none;">
+                    <p><strong>Examples:</strong> Ashwagandha, Brahmi, Giloy, Mint, Turmeric, Tulsi.</p>
+                    <p>These herbs are used in Ayurveda and traditional medicine to treat various ailments and promote a healthy lifestyle.</p>
+                </div>
+                <button class="btn" onclick="toggleText(this)">Read more</button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleText(button) {
+            const moreText = button.previousElementSibling;
+            if (moreText.style.display === "none") {
+                moreText.style.display = "block";
+                button.textContent = "Read less";
+            } else {
+                moreText.style.display = "none";
+                button.textContent = "Read more";
+            }
+        }
+    </script>
+
+    <!-- service section end  -->
+
+    <!-- team card section start  -->
+
+    <section id="team" class="team">
+
+        <!-- team heading  -->
+        <h1 class="heading">our AyurVANA team</h1>
+
+        <div class="row">
+            <!-- card start  -->
+            <div class="card">
+                <!-- card images  -->
+                <div class="images">
+                    <img src="Person Image.jpg" alt="">
+                </div>
+                <!-- card info  -->
+                <div class="info">
+                    <h2>Ancey Verma</h2>
+                    <p>E23CSEU1784</p>
+
+                    <!-- card icons  -->
+                    <div class="icons">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- card end  -->
+            <!-- card start  -->
+            <div class="card">
+                <!-- card images  -->
+                <div class="images">
+                    <img src="Person Image.jpg" alt="">
+                </div>
+                <!-- card info  -->
+                <div class="info">
+                    <h2>Vijay Mavai</h2>
+                    <p>E23CSEU1771</p>
+
+                    <!-- card icons  -->
+                    <div class="icons">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- card end  -->
+            <!-- card start  -->
+            <div class="card">
+                <!-- card images  -->
+                <div class="images">
+                    <img src="Person Image.jpg" alt="">
+                </div>
+                <!-- card info  -->
+                <div class="info">
+                    <h2>Hitesh Meher</h2>
+                    <p>E23CSEU1782</p>
+
+                    <!-- card icons  -->
+                    <div class="icons">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- card end  -->
+
+        </div>
+    </section>
+
+    <!-- team card section end  -->
+
+    <!-- Plant Diease Detection section start  -->
+
+    <section id="Plant" class="Plant-tool">
+        <!-- form heading  -->
+        <h1 class="heading">Plant Disease Detection Mechanism</h1>
+    
+        <div class="row">
+            <!-- form  -->
+            <div class="form-container">
+                <form action="/upload" method="POST" enctype="multipart/form-data">
+                    <!-- Plant name input -->
+                    <div class="inputbox">
+                        <input type="text" name="plantName" placeholder="Enter Plant Name" required>
+                    </div>
+    
+                    <!-- Image upload input -->
+                    <div class="inputbox">
+                        <label for="plantImage"><strong>Upload Plant Image:</strong></label><br>
+                        <input type="file" name="plantImage" id="plantImage" accept="image/*" required>
+                    </div>
+    
+                    <!-- Submit button -->
+                    <input type="submit" value="Detect Disease">
+                </form>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <!-- Plant Diease Detection  section end  -->
+
+    <section id="Garden" class="my-garden">
+        <h1 class="heading">My Garden</h1>
+      
+        <div class="row">
+          <div class="subject-container">
+            <!-- 👇 This is where bookmarked plants will appear -->
+            <div id="bookmarked-plants"></div>
+          </div>
+        </div>
+      </section>      
+
+
+    <!-- footer section start  -->
+
+    <section class="footer">
+
+        <!-- footer heading  -->
+        <h1>Created by | Team AyurVANA | All Rights Reserved</h1>
+
+        <!-- footer icons  -->
+       
+    </section>
+    <!-- footer section end  -->
+
+
+
+
+
+
+
+
+    <!-- jquery file link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="./js/main.js"></script>
+
+    <script>
+        function toggleReadMore() {
+          const moreText = document.getElementById("more-about");
+          const btn = document.querySelector("#about .btn");
+      
+          if (moreText.style.display === "none") {
+            moreText.style.display = "block";
+            btn.textContent = "Read Less";
+          } else {
+            moreText.style.display = "none";
+            btn.textContent = "Read More";
+          }
+        }
+      </script>  
+      
+      
+      <script>
+        function loadBookmarks() {
+            const container = document.getElementById('bookmarked-plants');
+            const plants = JSON.parse(localStorage.getItem('bookmarkedPlants')) || [];
+    
+            if (plants.length === 0) {
+                container.innerHTML = '<p>No plants bookmarked yet.</p>';
+                return;
+            }
+    
+            plants.forEach(plant => {
+                const plantCard = document.createElement('div');
+                plantCard.className = 'plant-card';
+                plantCard.innerHTML = `
+                    <img src="${plant.imageUrl}" alt="${plant.name}" style="width: 150px; border-radius: 10px;">
+                    <p><strong>${plant.name}</strong></p>
+                `;
+                container.appendChild(plantCard);
+            });
+        }
+    
+        window.onload = loadBookmarks;
+    </script>    
+
+</body>
+
+</html>
